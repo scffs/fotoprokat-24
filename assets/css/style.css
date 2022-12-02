@@ -61,8 +61,12 @@ section{
     margin: 27px 0;
 }
 .btn{
+    width: 140px;
+    height: 40px;
+    font-weight: 700;
     background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    color: white;
     border-radius: 100px;
 }
 .btn--white{
@@ -160,8 +164,8 @@ section{
 .user-nav__stats::after{
     content: '7';
 }
-.user-nav__current{
-    position: relative;
+.user-nav__current > svg > path{
+    fill: #4F9C2C;
 }
 .user-nav__basket::after{
     color: white;
@@ -212,15 +216,17 @@ section{
     padding: 317px 0 50px;
     position: relative;
 }
+.intro__title{
+    z-index: 5;
+    position: relative;
+    padding-left: 10px;
+}
 .intro__title,
 .intro__title > span{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
     line-height: 61px;
-    z-index: 5;
-    position: relative;
-    padding-left: 10px;
 }
 .intro__title > span{
     background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
@@ -311,8 +317,6 @@ section{
     grid-column: 2 / 3;
     align-self: center;
     justify-self: center;
-    width: 140px;
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -332,7 +336,8 @@ section{
     background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
     color: white;
 }
-.item-products__btn:hover{
+.item-products__btn:hover,
+.search-btn:hover{
     background: linear-gradient(50deg, #8EE902 0%, #4F9C2C 100%);
     color: white;
 }
@@ -367,4 +372,34 @@ section{
     width: 1px;
     height: 70px;
     background: #EFEFEF;
+}
+.search__title{
+    margin: 93px 0 24px;
+}
+.search__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+.search__text{
+    width: 570px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #75758a;
+}
+.search-btn{
+    width: 260px;
+    height: 55px;
+    padding: 17px 56px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.search__input{
+    padding: 12px 170px 12px 20px;
+    background: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
 }
