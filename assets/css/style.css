@@ -32,6 +32,9 @@ button{
 section{
     margin: 30px 0;
 }
+.bg-white{
+    background-color: #fff;
+}
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -389,6 +392,12 @@ section{
     font-size: 14px;
     color: #75758a;
 }
+.search__text > span {
+    color: #000000;
+}
+.search-form{
+    position: relative;
+}
 .search-btn{
     width: 260px;
     height: 55px;
@@ -397,9 +406,102 @@ section{
     margin-right: 20px;
 }
 .search__input{
-    padding: 12px 170px 12px 20px;
+    width: 250px;
+    padding: 12px 20px;
     background: #F5F5F5;
     border: 1px solid #E3E3E3;
-    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
     border-radius: 100px;
+    position: relative;
+    color: #75758A;
+    z-index: 2;
+    background: url("../images/search-icon.svg") no-repeat 93% center;
+}
+.search-form__label ~ div.input-bg{
+    position: relative;
+    width: 260px;
+    height: 50px;
+    z-index: 1;
+    color: #000;
+    left: 279px;
+    top: -52px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px;
+}
+.services__item{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding:0 0 40px 40px;
+    height: 350px;
+}
+.services__text ~ div,
+.services__text ~ div::before{
+    content: '';
+    position: absolute;
+    z-index: 3;
+    width: 148px;
+    height: 42px;
+    left: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+.services__item:nth-child(2) > .services__text{
+    color: white;
+}
+.services__item:nth-child(2) > div::before{
+    width: 142px;
+}
+.services__item:nth-child(2) > div{
+    width: 202px;
+}
+.services__item:nth-child(3) > div::before{
+    width: 138px;
+}
+.services__item:nth-child(3) > div{
+    width: 195px;
+}
+.services__item:nth-child(5) > div::before{
+    width: 217px;
+}
+.services__text ~ div.bg-pink,
+.services__text ~ div.bg-pink::before{
+    background: #75758A;
+    box-shadow: none;
+}
+.services__text ~ div::before{
+    z-index: 2;
+    width: 185px;
+    bottom: 40px;
+    left: 0;
+}
+.services__item_bg{
+    grid-column: 1 / 3;
+}
+.services__text{
+    z-index: 5;
+    color: black;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.services__item_canon{
+    background-image: url("../images/services/photo.png") ;
+}
+.services__item_per-day{
+    background-image: url("../images/services/photo-2.png") ;
+}
+.services__item_best-week{
+    background-image: url("../images/services/photo-3.png") ;
+}
+.services__item_bg{
+    background-image: url("../images/services/photo-4.png") ;
+}
+.services__item_nice-camera{
+    background-image: url("../images/services/photo-5.png") ;
 }
