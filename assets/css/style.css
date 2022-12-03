@@ -32,8 +32,14 @@ button{
 section{
     margin: 30px 0;
 }
-.bg-white{
-    background-color: #fff;
+.btn-clear{
+    position: absolute;
+    right: -50px;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    background: url("../images/close.svg") center center no-repeat #000000;
 }
 .visually-hidden{
     position: absolute;
@@ -385,6 +391,9 @@ section{
     font-size: 14px;
     color: #75758a;
 }
+.search__form{
+    position: relative;
+}
 .search__text > span {
     color: #000000;
 }
@@ -421,9 +430,24 @@ section{
     border-radius: 100px;
 }
 .services-list{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 350px);
     gap: 30px;
+}
+.slider-next,
+.slider-prev{
+    position: relative;
+    background: url("../images/bottom.svg") center center no-repeat white;
+    width: 40px;
+    height: 40px;
+    bottom: 300px;
+    left: -65px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.slider-prev{
+    left: 1100px;
+    transform: rotate(180deg);
 }
 .services__item{
     position: relative;
@@ -498,6 +522,7 @@ section{
     background-image: url("../images/services/photo-5.png") ;
 }
 .workWithUs{
+    margin-top: 100px;
     background-color: #F5F5F5;
     padding: 95px 135px;
 }
@@ -524,11 +549,22 @@ section{
     margin: 37px 0 40px;
 }
 .workWithUs__item{
-    background-color: #fff;
     font-size: 14px;
     width: 255px;
     height: 135px;
     padding: 25px 0 0 30px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     line-height: 20px;
+}
+.workWithUs__item_invest{
+    background: url('../images/work/diamond.svg') no-repeat 90% 70% #fff;
+}
+.workWithUs__item_stable{
+    background: url('../images/work/calendar-6.svg') no-repeat 90% 70% #fff;
+}
+.workWithUs__item_guarantees{
+    background: url('../images/work/umbrella.svg') no-repeat 90% 70% #fff;
+}
+.workWithUs__item_payments{
+    background: url('../images/work/eye.svg') no-repeat 90% 70% #fff;
 }
