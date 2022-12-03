@@ -70,6 +70,7 @@ section{
     background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     color: white;
+    text-transform: uppercase;
     border-radius: 100px;
 }
 .btn--white{
@@ -187,12 +188,8 @@ section{
     width: 0;
     transition: width .2s linear;
 }
-.user-nav__basket:hover::before{
-    width: 43px;
-}
-.user-nav__stats:hover::before{
-    width: 43px;
-}
+.user-nav__basket:hover::before,
+.user-nav__stats:hover::before,
 .user-nav__favorite:hover::before{
     width: 43px;
 }
@@ -324,6 +321,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-transform: none;
 }
 .item-products__btn,
 .item-products__btn > span{
@@ -335,13 +333,8 @@ section{
     grid-column: 1 / 2;
     color: black;
 }
-.item-products__btn.btn--white:hover{
-    background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
-    color: white;
-}
-.item-products__btn:hover,
-.search-btn:hover{
-    background: linear-gradient(50deg, #8EE902 0%, #4F9C2C 100%);
+.btn:hover{
+    background: linear-gradient(90deg, #8EE902 0%, #4F9C2C 100%);
     color: white;
 }
 .item-products__title{
@@ -402,7 +395,6 @@ section{
     width: 260px;
     height: 55px;
     padding: 17px 56px;
-    text-transform: uppercase;
     margin-right: 20px;
 }
 .search__input{
@@ -504,4 +496,39 @@ section{
 }
 .services__item_nice-camera{
     background-image: url("../images/services/photo-5.png") ;
+}
+.workWithUs{
+    background-color: #F5F5F5;
+    padding: 95px 135px;
+}
+.workWithUs > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-title{
+    color: #75758A;
+    line-height: 26px;
+    text-align: center;
+    font-size: 14px;
+}
+.btn-guess{
+    width: 300px;
+    height: 50px;
+    padding: 17px 40px;
+}
+.workWithUs__list{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 37px 0 40px;
+}
+.workWithUs__item{
+    background-color: #fff;
+    font-size: 14px;
+    width: 255px;
+    height: 135px;
+    padding: 25px 0 0 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    line-height: 20px;
 }
