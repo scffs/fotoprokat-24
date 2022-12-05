@@ -21,6 +21,10 @@
 a{
     text-decoration: none;
 }
+a:hover,
+button:hover{
+    transition: all .2s linear;
+}
 ul{
     list-style-type: none;
 }
