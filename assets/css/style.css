@@ -435,6 +435,10 @@ section{
     grid-template-columns: repeat(3, 350px);
     gap: 30px;
 }
+.slider__buttons{
+    display: flex;
+    justify-content: space-between;
+}
 .slider-next,
 .slider-prev{
     position: relative;
@@ -442,11 +446,11 @@ section{
     width: 40px;
     height: 40px;
     bottom: 300px;
-    left: -65px;
+    left: -20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-.slider-prev{
-    left: 1100px;
+.slider-next{
+    left:55px;
     transform: rotate(180deg);
 }
 .services__item{
@@ -455,6 +459,10 @@ section{
     align-items: flex-end;
     padding:0 0 40px 40px;
     height: 350px;
+}
+.services__item:hover{
+    transform: scale(1.05);
+    transition: transform .2s linear;
 }
 .services__text ~ div,
 .services__text ~ div::before{
